@@ -85,9 +85,9 @@ html, body {
 }
 
 .rating-score:hover {
-	background-color: var(--orange);
-	color: var(--white);
-	cursor: pointer;
+	background-color: var(--orange) !important;
+	color: var(--white) !important;
+	cursor: pointer !important;
 }
 
 .submit-container {
