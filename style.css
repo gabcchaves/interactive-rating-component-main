@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root {
+	--orange: hsl(25, 97%, 53%);
+	--white: hsl(0, 0%, 100%);
+	--light-grey: hsl(217, 12%, 63%);
+	--medium-grey: hsl(216, 12%, 54%);
+	--dark-grey: #393945;
+	--dark-blue: hsl(213, 19%, 18%);
+	--very-dark-blue: hsl(216, 12%, 8%);
+}
+
+html, body {
+	font-family: 'Overpass', sans-serif;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	font-size: 10pt;
+}
+
+.container {
+	width: 100%;
+	height: 100%;
+	background-color: var(--very-dark-blue);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.card {
+	width: 23%;
+	height: 45%;
+	padding: 2vmax;
+	background-color: var(--dark-blue);
+	border-radius: 30px;
+	display: flex;
+	flex-direction: column;
+	box-shadow: 0 0 1px 1px #111;
+}
+
+.card-icon-container {
+	height: 15%;
+}
+
+.card-icon-bg {
+	width: 3vmax;
+	height: 3vmax;
+	background-color: var(--dark-grey);
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.card-title {
+	font-size: 16pt;
+	color: var(--white);
+}
+
+.card-title * {
+	margin: 10% 0 0 0;
+}
+
+.card-description * {
+	text-align: left;
+	color: var(--light-grey);
+}
+
+.card-score-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex: 1;
+}
+
+.rating-score {
+	border: none;
+	border-radius: 50%;
+	width: 3vmax;
+	height: 3vmax;
+	background-color: var(--dark-grey);
+	color: var(--light-grey);
+}
+
+.rating-score:hover {
+	background-color: var(--orange);
+	color: var(--white);
+	cursor: pointer;
+}
+
+.submit-container {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+}
+
+.submit-button {
+	background-color: var(--orange);
+	color: var(--white);
+	border: none;
+	border-radius: 30px;
+	width: 100%;
+	height: 70%;
+}
+
+.submit-button:hover {
+	background-color: var(--white);
+	color: var(--orange);
+	cursor: pointer;
+}
+
+#thanks-page .card {
+	align-items: center;
+}
+
+#thanks-page .rating-log {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex: 1;
+}
+
+#thanks-page .rating-log div {
+	padding: 1vmin;
+	background-color: var(--dark-grey);
+	color: var(--orange);
+	border-radius: 30px;
+}
